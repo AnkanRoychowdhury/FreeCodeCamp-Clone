@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as actionTypes from "../constants/courseConstant";
 
-const URL = "";
+const URL = "https://freecodecamp-clone.onrender.com";
 
 export const getCourses = () => async (dispatch) =>{
     try {
