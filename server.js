@@ -22,7 +22,7 @@ const PASSWORD = process.env.DB_PASSWORD;
 const URL = process.env.MONGODB_URI || `mongodb://${USERNAME}:${PASSWORD}@ac-wuugyhl-shard-00-00.piq3pzz.mongodb.net:27017,ac-wuugyhl-shard-00-01.piq3pzz.mongodb.net:27017,ac-wuugyhl-shard-00-02.piq3pzz.mongodb.net:27017/FREECODECAMP?ssl=true&replicaSet=atlas-s9b45m-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 
 
 Connection(URL);
