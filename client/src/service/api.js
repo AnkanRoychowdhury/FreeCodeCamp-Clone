@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const URL = 'https://freecodecamp-clone.onrender.com';
+const  URL_API = 'https://freecodecamp-clone.onrender.com';
 
 export const authenticateSignin = async (data) => {
     try {
-        return await axios.post(`${URL}/signin`,data);
+        return await axios.post(`${ URL_API}/signin`,data);
     } catch (error) {
         console.log('Error while calling Signin API -->', error.message);
         return error.response;
@@ -13,7 +13,7 @@ export const authenticateSignin = async (data) => {
 
 export const authenticateLogin = async (data) => {
     try {
-        return await axios.post(`${URL}/login`,data);
+        return await axios.post(`${ URL_API}/login`,data);
     } catch (error) {
         console.log('Error while calling Login API -->', error.message);
         return error.response;
