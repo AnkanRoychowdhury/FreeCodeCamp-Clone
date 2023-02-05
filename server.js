@@ -29,7 +29,7 @@ const URL = process.env.MONGODB_URI || `mongodb://${USERNAME}:${PASSWORD}@ac-wuu
 Connection(URL);
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/build'));
+    app.use(express.static('client/build'))
 }
 
 app.listen(PORT,() => console.log(`Server is running succesfully on ${PORT}`));
