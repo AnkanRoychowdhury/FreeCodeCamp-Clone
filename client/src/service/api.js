@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'https://freecodecamp-clone.onrender.com';
+const URL = '';
 
 export const authenticateSignin = async (data) => {
     try {
